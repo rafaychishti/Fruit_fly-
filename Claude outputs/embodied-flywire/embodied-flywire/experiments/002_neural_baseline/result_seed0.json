@@ -1,0 +1,12 @@
+{
+  "n_neurons": 200,
+  "n_steps": 5000,
+  "sim_duration_s": 1.0,
+  "seed": 0,
+  "wall_clock_s": 0.12154473900000085,
+  "steps_per_sec": 41137.11577429908,
+  "total_spikes": 7245,
+  "mean_firing_rate_hz": 36.225,
+  "deterministic_rerun_identical": true,
+  "raster_sha256_16": "7bfddfc1e4e4e374"
+}

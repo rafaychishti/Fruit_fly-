@@ -1,0 +1,18 @@
+{
+  "mode": "random",
+  "n_steps": 15000,
+  "sim_duration_s": 1.5,
+  "wall_clock_s": 23.389782064999963,
+  "steps_per_sec": 641.3056760561152,
+  "real_time_factor": 0.06413056760561152,
+  "final_qpos_sample": [
+    1.720828837878567,
+    -0.14934862055942083,
+    -208.03868833672243,
+    0.6053526016510848,
+    0.2518441881399413,
+    0.7506875864963762
+  ],
+  "final_body_com": "thorax",
+  "nan_or_inf_detected": false
+}

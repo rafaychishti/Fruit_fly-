@@ -1,0 +1,18 @@
+{
+  "mode": "standing",
+  "n_steps": 15000,
+  "sim_duration_s": 1.5,
+  "wall_clock_s": 23.530970593999996,
+  "steps_per_sec": 637.4577682666753,
+  "real_time_factor": 0.06374577682666753,
+  "final_qpos_sample": [
+    -1.0815274046209145,
+    -0.48331333926162307,
+    -203.31518648768156,
+    -0.4155781214215278,
+    0.5659407037733434,
+    -0.5799543843843518
+  ],
+  "final_body_com": "thorax",
+  "nan_or_inf_detected": false
+}

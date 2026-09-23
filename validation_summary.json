@@ -1,0 +1,18 @@
+{
+  "lc4_to_dnp01": {
+    "rows": 120,
+    "total_syn_count": 805,
+    "distinct_pre": 104
+  },
+  "lplc2_to_dnp01": {
+    "rows": 201,
+    "total_syn_count": 1080,
+    "distinct_pre": 189
+  },
+  "dnp01_incoming_total_rows": 1577,
+  "dnp01_incoming_from_lc4_rows": 120,
+  "dnp01_incoming_from_lplc2_rows": 201,
+  "dnp01_incoming_from_other_rows": 1256,
+  "dnp01_incoming_from_other_distinct_neurons": 569,
+  "reverse_dnp01_to_visual_rows": 212
+}

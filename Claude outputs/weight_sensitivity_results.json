@@ -1,0 +1,557 @@
+{
+  "config": {
+    "weight_scales_tested": [
+      0.005,
+      0.01,
+      0.02
+    ],
+    "baseline_weight_scale": 0.01,
+    "seed": 0,
+    "dt_ms": 0.2,
+    "stim_window_ms": [
+      10.0,
+      60.0
+    ],
+    "stimulus_current": 0.15000000000000002,
+    "rheobase_current": 0.05,
+    "note": "Everything except weight_scale is identical to exp_stimulus_response.py's baseline config (same graph, stimulus, LIF params, seed, ablation edge classes)."
+  },
+  "results_by_scale": {
+    "0.005": {
+      "LC4_alone": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      },
+      "LPLC2_alone": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 2,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 0.5
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 20.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.044000000000000004
+          }
+        }
+      },
+      "combined": {
+        "stimulated_types": [
+          "LC4",
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 7,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 70.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.15400000000000003
+          }
+        }
+      },
+      "LC4_ablation": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [
+          "LC4->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      },
+      "LPLC2_ablation": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [
+          "LPLC2->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      }
+    },
+    "0.01": {
+      "LC4_alone": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 4,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 40.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.08800000000000001
+          }
+        }
+      },
+      "LPLC2_alone": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 7,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 70.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.15400000000000003
+          }
+        }
+      },
+      "combined": {
+        "stimulated_types": [
+          "LC4",
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 10,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          }
+        }
+      },
+      "LC4_ablation": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [
+          "LC4->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      },
+      "LPLC2_ablation": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [
+          "LPLC2->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      }
+    },
+    "0.02": {
+      "LC4_alone": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 10,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          }
+        }
+      },
+      "LPLC2_alone": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 10,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          }
+        }
+      },
+      "combined": {
+        "stimulated_types": [
+          "LC4",
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [],
+        "dnp01_spikes": 10,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 1.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          }
+        }
+      },
+      "LC4_ablation": {
+        "stimulated_types": [
+          "LC4"
+        ],
+        "ablated_edge_classes": [
+          "LC4->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 520,
+        "lplc2_spikes": 0,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9999210822038909,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.9519230769230769,
+          "LPLC2": 0.0,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "LPLC2": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      },
+      "LPLC2_ablation": {
+        "stimulated_types": [
+          "LPLC2"
+        ],
+        "ablated_edge_classes": [
+          "LPLC2->DNp01"
+        ],
+        "dnp01_spikes": 0,
+        "lc4_spikes": 0,
+        "lplc2_spikes": 1050,
+        "completely_silent_all_groups": false,
+        "max_membrane_potential_abs_observed": 0.9997520321909225,
+        "any_nonfinite_membrane_potential": false,
+        "max_synchrony_fraction": {
+          "LC4": 0.0,
+          "LPLC2": 0.9619047619047619,
+          "DNp01": 0.0
+        },
+        "firing_rate_during_stim_window": {
+          "LC4": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          },
+          "LPLC2": {
+            "observed_hz": 100.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.22000000000000003
+          },
+          "DNp01": {
+            "observed_hz": 0.0,
+            "theoretical_max_hz": 454.5454545454545,
+            "ratio_to_theoretical_max": 0.0
+          }
+        }
+      }
+    }
+  },
+  "determinism_by_scale": {
+    "0.005": true,
+    "0.01": true,
+    "0.02": true
+  }
+}

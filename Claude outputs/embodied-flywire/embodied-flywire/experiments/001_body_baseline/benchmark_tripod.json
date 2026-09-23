@@ -1,0 +1,18 @@
+{
+  "mode": "tripod",
+  "n_steps": 15000,
+  "sim_duration_s": 1.5,
+  "wall_clock_s": 23.927729762000013,
+  "steps_per_sec": 626.8877218691147,
+  "real_time_factor": 0.06268877218691146,
+  "final_qpos_sample": [
+    1.038445811860585,
+    -1.2604508315982736,
+    -203.3992232168028,
+    0.3982084541245074,
+    0.598533759594427,
+    0.5441295662898571
+  ],
+  "final_body_com": "thorax",
+  "nan_or_inf_detected": false
+}
